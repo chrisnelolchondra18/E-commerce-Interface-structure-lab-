@@ -3,31 +3,141 @@
 <head>
   <meta charset="UTF-8">
   <title>My Account</title>
+  <style>
+    /* Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background-color: #f5f5f5;
+      padding: 20px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .container {
+      max-width: 900px;
+      width: 100%;
+      background-color: #fff;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    header h1 {
+      color: #8a2be2; /* Purple heading */
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      margin-bottom: 30px;
+    }
+
+    nav li {
+      font-weight: bold;
+      color: #555;
+      cursor: pointer;
+      padding: 8px 12px;
+      border-radius: 6px;
+      transition: background 0.3s, color 0.3s;
+    }
+
+    nav li:hover {
+      background-color: #8a2be2;
+      color: white;
+    }
+
+    h2 {
+      color: #8a2be2;
+      margin-bottom: 15px;
+    }
+
+    dl {
+      background-color: #f9f9f9;
+      padding: 15px;
+      border-radius: 8px;
+      margin-bottom: 20px;
+    }
+
+    dt {
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    dd {
+      margin-left: 20px;
+      margin-bottom: 10px;
+      color: #555;
+    }
+
+    details {
+      background-color: #f0e6ff;
+      border-left: 4px solid #8a2be2;
+      padding: 10px 15px;
+      border-radius: 6px;
+      margin-bottom: 10px;
+    }
+
+    summary {
+      font-weight: bold;
+      cursor: pointer;
+      color: #8a2be2;
+    }
+
+    details p {
+      margin-top: 8px;
+      color: #555;
+    }
+
+    /* Responsive */
+    @media (max-width: 600px) {
+      nav ul {
+        flex-direction: column;
+        gap: 10px;
+      }
+    }
+  </style>
 </head>
 <body>
 
-<header>
-  <h1>Welcome, Alex</h1>
-  <nav>
-    <ul>
-      <li>Order History</li>
-      <li>Profile Settings</li>
-      <li>Wishlist</li>
-    </ul>
-  </nav>
-</header>
+<div class="container">
+  <header>
+    <h1>Welcome, Alex</h1>
+    <nav>
+      <ul>
+        <li>Order History</li>
+        <li>Profile Settings</li>
+        <li>Wishlist</li>
+      </ul>
+    </nav>
+  </header>
 
-<h2>Previous Orders</h2>
+  <h2>Previous Orders</h2>
 
-<dl>
-  <dt>Order #101</dt>
-  <dd>Smart Fitness Watch - Delivered</dd>
-</dl>
+  <dl>
+    <dt>Order #101</dt>
+    <dd>Smart Fitness Watch - Delivered</dd>
+  </dl>
 
-<details>
-  <summary>Order #102</summary>
-  <p>Smart Fitness Watch Pro - Shipped</p>
-</details>
+  <details>
+    <summary>Order #102</summary>
+    <p>Smart Fitness Watch Pro - Shipped</p>
+  </details>
+
+  <details>
+    <summary>Order #103</summary>
+    <p>Fitness Tracker X - Processing</p>
+  </details>
+</div>
 
 </body>
 </html>

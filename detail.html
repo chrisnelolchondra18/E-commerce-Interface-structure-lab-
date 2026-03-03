@@ -1,170 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <title>Product Details</title>
-  <style>
-    /* Reset */
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: Arial, sans-serif;
-    }
-
-    body {
-      background-color: #f5f5f5;
-      color: #333;
-      padding: 20px;
-      display: flex;
-      justify-content: center;
-    }
-
-    .container {
-      background-color: #fff;
-      padding: 30px;
-      border-radius: 10px;
-      max-width: 800px;
-      width: 100%;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    }
-
-    h1 {
-      color: #8a2be2; /* Purple title */
-      margin-bottom: 20px;
-      text-align: center;
-    }
-
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      margin-bottom: 20px;
-    }
-
-    th, td {
-      padding: 12px 15px;
-      border: 1px solid #ddd;
-      text-align: left;
-    }
-
-    th {
-      background-color: #8a2be2; /* Purple header */
-      color: white;
-    }
-
-    td {
-      background-color: #f9f9f9;
-    }
-
-    form {
-      margin-bottom: 30px;
-      display: flex;
-      align-items: center;
-      gap: 15px;
-    }
-
-    input[type="number"] {
-      width: 60px;
-      padding: 5px;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-    }
-
-    button {
-      background-color: #8a2be2; /* Purple button */
-      color: white;
-      border: none;
-      padding: 10px 20px;
-      border-radius: 6px;
-      cursor: pointer;
-      transition: background 0.3s;
-    }
-
-    button:hover {
-      background-color: #6a1fb5; /* Darker purple */
-    }
-
-    section {
-      margin-top: 30px;
-    }
-
-    section h2 {
-      color: #8a2be2;
-      margin-bottom: 15px;
-      text-align: center;
-    }
-
-    blockquote {
-      background-color: #f0e6ff;
-      border-left: 5px solid #8a2be2;
-      padding: 15px 20px;
-      border-radius: 8px;
-      font-style: italic;
-      color: #555;
-      margin-bottom: 10px;
-    }
-
-    /* Responsive */
-    @media (max-width: 600px) {
-      form {
-        flex-direction: column;
-        align-items: flex-start;
-      }
-      input[type="number"] {
-        width: 100%;
-      }
-    }
-  </style>
+  <title>Watch Details</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<div class="container">
-  <h1>Smart Fitness Watch</h1>
+<header>
+  <h1>Smart Fitness Watch Pro</h1>
+</header>
 
-  <table>
-    <tr>
-      <th>Feature</th>
-      <th>Description</th>
-    </tr>
-    <tr>
-      <td>Battery Life</td>
-      <td>7 Days</td>
-    </tr>
-    <tr>
-      <td>Water Resistance</td>
-      <td>IP68</td>
-    </tr>
-    <tr>
-      <td>Heart Rate Monitor</td>
-      <td>24/7 Monitoring</td>
-    </tr>
-    <tr>
-      <td>Connectivity</td>
-      <td>Bluetooth 5.0</td>
-    </tr>
-  </table>
+<main style="padding:20px;">
 
-  <form>
-    <label>
-      Quantity:
-      <input type="number" min="1" value="1">
-    </label>
-    <button>Add to Cart</button>
-  </form>
+  <img src="https://via.placeholder.com/300">
 
-  <section>
-    <h2>User Reviews</h2>
-    <blockquote>
-      Very accurate tracking and stylish design!
-    </blockquote>
-    <blockquote>
-      Battery lasts a full week. Love it!
-    </blockquote>
-    <blockquote>
-      Comfortable to wear and easy to use.
-    </blockquote>
-  </section>
-</div>
+  <h2>$149</h2>
+
+  <h3>Specifications</h3>
+
+  <div class="table-wrapper">
+    <table border="1" width="100%">
+      <tr><th>Feature</th><th>Details</th></tr>
+      <tr><td>Battery</td><td>7 Days</td></tr>
+      <tr><td>Waterproof</td><td>Yes</td></tr>
+      <tr><td>GPS</td><td>Built-in</td></tr>
+    </table>
+  </div>
+
+</main>
 
 </body>
 </html>
